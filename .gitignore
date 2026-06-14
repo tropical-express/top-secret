@@ -1,0 +1,11 @@
+node_modules/
+dist/
+pnpm-workspace.yaml
+*.tar.xz
+*.zip
+*.SHA256SUMS
+*.dll
+*.pak
+*.yml
+win-unpacked/
+locales/

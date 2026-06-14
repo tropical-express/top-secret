@@ -1,0 +1,40 @@
+{
+"name": "top-secret",
+"productName": "Top Secret",
+"version": "1.0.0",
+"description": "You have to download to find out what's there.",
+"author": "Jacob",
+"license": "MIT",
+"main": "main.js",
+"scripts": {
+"start": "electron .",
+"pack": "electron-builder --dir",
+"dist": "electron-builder"
+},
+"devDependencies": {
+"electron": "^42.4.0",
+"electron-builder": "^26.15.3"
+},
+"build": {
+"appId": "com.jacob.topsecret",
+"productName": "Top Secret",
+"directories": {
+"output": "dist"
+},
+"files": [
+"**/*",
+"!dist/**/*"
+],
+"extraResources": [
+{
+"from": "videos",
+"to": "videos"
+}
+],
+"win": {
+"target": [
+"portable"
+]
+}
+}
+}

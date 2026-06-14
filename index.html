@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Secret</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: white;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        background: #222;
+        border-bottom: 1px solid #333;
+        padding: 15px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #container {
+        flex: 1;
+        display: flex;
+        overflow: hidden;
+    }
+
+    #sidebar {
+        width: 300px;
+        background: #1a1a1a;
+        border-right: 1px solid #333;
+        overflow-y: auto;
+    }
+
+    #videoList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #videoList li {
+        padding: 12px;
+        cursor: pointer;
+        border-bottom: 1px solid #333;
+    }
+
+    #videoList li:hover {
+        background: #333;
+    }
+
+    #content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #player {
+        width: 100%;
+        max-width: 1200px;
+        max-height: 90vh;
+        background: black;
+    }
+</style>
+```
+
+</head>
+<body>
+
+```
+<header>
+    Top Secret
+</header>
+
+<div id="container">
+
+    <aside id="sidebar">
+        <ul id="videoList"></ul>
+    </aside>
+
+    <main id="content">
+        <video id="player" controls autoplay>
+            Your browser does not support HTML5 video.
+        </video>
+    </main>
+
+</div>
+
+<script src="renderer.js"></script>
+```
+
+</body>
+</html>

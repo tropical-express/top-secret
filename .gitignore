@@ -9,3 +9,5 @@ pnpm-workspace.yaml
 *.yml
 win-unpacked/
 locales/
+releases/
+*.txt
